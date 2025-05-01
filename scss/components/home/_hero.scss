@@ -1,0 +1,28 @@
+.hero {
+  padding-bottom: 198px;
+
+  &__container {
+    @include flex-all-between;
+  }
+  
+  &__info {
+    max-width: 592px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__description {
+    margin-bottom: 50px;
+  }
+
+  &__stat {
+    @include flex-column;
+    gap: 8px;
+
+    &-number {
+      line-height: 78px;
+    }
+  }
+}

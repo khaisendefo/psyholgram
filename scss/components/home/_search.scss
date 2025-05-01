@@ -1,0 +1,30 @@
+.search {
+  padding-bottom: 120px;
+
+  &__card {
+    @include flex-between;
+    padding: 80px 100px;
+    border-radius: 64px;
+    background: #2f2e41;
+  }
+
+  &__info {
+    max-width: 614px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    color: var(--white-color);
+    background: none;
+    -webkit-text-fill-color: var(--white-color);
+  }
+
+  &__description {
+    margin-bottom: 40px;
+    color: var(--white-color);
+  }
+
+  &__link {
+    display: inline-block;
+  }
+}

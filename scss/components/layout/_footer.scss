@@ -1,0 +1,37 @@
+.footer {
+  padding: 80px 0;
+  background: rgb(244, 243, 255);
+
+  &__inner {
+    @include flex-between;
+  }
+
+  &__col {
+    & span {
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__list {
+    @include flex-column;
+    gap: 8px;
+
+    &-two {
+      gap: 20px;
+    }
+  }
+
+  &__social {
+    @include flex-align-center;
+    gap: 28px;
+  }
+
+  &__copyright {
+    text-align: right;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+  }
+}

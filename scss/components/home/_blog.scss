@@ -1,0 +1,42 @@
+.blog {
+  padding-bottom: 172px;
+
+  &__title {
+    margin-bottom: 80px;
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  &__article {
+    max-width: 100%;
+
+    &-image {
+      margin-bottom: 40px;
+      max-width: 100%;
+
+      & img {
+        width: 100%;
+      }
+    }
+
+    &-info {
+      @include flex-column;
+      gap: 20px;
+    }
+
+    &-title {
+      color: var(--dark-color);
+      background: none;
+      -webkit-text-fill-color: var(--dark-color);
+    }
+
+    &-link {
+      display: inline-block;
+      max-width: 201px;
+    }
+  }
+}

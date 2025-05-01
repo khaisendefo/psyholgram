@@ -1,0 +1,26 @@
+.top-psychologists {
+  padding-bottom: 172px;
+  
+  &__title {
+    margin-bottom: 80px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 62px;
+    margin-bottom: 60px;
+
+    &-card {
+      @include flex-column;
+      align-items: center;
+      gap: 21px;
+    }
+  }
+
+  &__link {
+    display: block;
+    max-width: 203px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,83 @@
+.text {
+
+  &-title {
+    &-h1 {
+      font-size: 64px;
+      font-weight: 500;
+      line-height: 50px;
+      letter-spacing: -1px;
+      background: linear-gradient(48.65deg, rgb(147, 111, 212),rgb(86, 76, 173));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+
+    &-h2 {
+      background: linear-gradient(48.01deg, rgb(147, 111, 212),rgb(86, 76, 173));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      font-size: 48px;
+      font-weight: 500;
+      line-height: 59px;
+      letter-spacing: 0%;
+    }
+
+    &-h3 {
+      background: linear-gradient(48.01deg, rgb(147, 111, 212),rgb(86, 76, 173));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 39px;
+      letter-spacing: 0%;
+    }
+  }
+  
+  &-p {
+    color: var(--dark-color);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0px;
+
+    &-medium {
+      font-weight: 500;
+      line-height: 24px;
+    }
+  }
+
+  &-item {
+    color: var(--dark-color);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0%;
+
+    &-regular {
+      font-weight: 500;
+    }
+  }
+
+  &-name {
+    color: var(--dark-color);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  &-hover {
+    &-link {
+      transition: all var(--transition);
+
+      &:hover {
+        color: var(--blueviolet-dark-color);
+      }
+    }
+  }
+
+}
