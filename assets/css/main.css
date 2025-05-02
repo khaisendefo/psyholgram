@@ -698,6 +698,10 @@ a {
   }
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .header {
   position: relative;
   padding: 50px 0 115px;
