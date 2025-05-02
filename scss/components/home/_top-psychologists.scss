@@ -1,8 +1,36 @@
 .top-psychologists {
   padding-bottom: 172px;
+
+  @include breakpoint-1200 {
+    padding-bottom: 150px;
+  }
+
+  @include breakpoint-1000 {
+    padding-bottom: 120px;
+  }
+
+  @include breakpoint-800 {
+    padding-bottom: 80px;
+  }
+
+  @include breakpoint-600 {
+    padding-bottom: 60px;
+  }
   
   &__title {
     margin-bottom: 80px;
+
+    @include breakpoint-1400 {
+      margin-bottom: 60px;
+    }
+    
+    @include breakpoint-1000 {
+      margin-bottom: 40px;
+    }
+
+    @include breakpoint-500 {
+      margin-bottom: 20px;
+    }
   }
 
   &__list {
@@ -11,10 +39,37 @@
     gap: 62px;
     margin-bottom: 60px;
 
+    @include breakpoint-1200 {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 40px;
+    }
+
+    @include breakpoint-800 {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    @include breakpoint-500 {
+      margin-bottom: 0;
+    }
+
     &-card {
       @include flex-column;
       align-items: center;
       gap: 21px;
+      text-align: center;
+
+      @include breakpoint-800 {
+        gap: 10px;
+      }
+    }
+
+    &-image {
+      max-width: 100%;
+
+      & img {
+        width: 100%;
+      }
     }
   }
 
@@ -22,5 +77,9 @@
     display: block;
     max-width: 203px;
     margin: 0 auto;
+
+    @include breakpoint-500 {
+      display: none;
+    }
   }
 }

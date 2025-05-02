@@ -6,6 +6,11 @@
   letter-spacing: 0%;
   transition: all var(--transition);
 
+  @include breakpoint-1000 {
+    font-size: 14px;
+    padding: 15px 30px;
+  }
+
   &-blueviolet {
     color: var(--white-color);
     border-radius: 100px;
@@ -40,6 +45,10 @@
     padding: 20px 40px;
     color: var(--blueviolet-dark-color);
     transition: all var(--transition);
+
+    @include breakpoint-1000 {
+      padding: 15px 30px;
+    }
 
     &:hover {
       color: var(--white-color);

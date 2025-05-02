@@ -1,16 +1,40 @@
 .header {
+  position: relative;
   padding: 50px 0 115px;
+
+  @include breakpoint-1200 {
+    padding: 40px 0 70px;
+  }
 
   &__container {
     @include flex-all-between;
+
+    @include breakpoint-1300 {
+      // gap: 20px;
+      display: none;
+    }
   }
 
   &__wrap {
     @include flex-align-center;
     gap: 140px;
+
+    @include breakpoint-1400 {
+      gap: 70px;
+    }
+
+    @include breakpoint-1300 {
+      // width: 100%;
+      // justify-content: space-between;
+      display: none;
+    }
   }
 
   &__nav {
+    @include breakpoint-1300 {
+      display: none;
+    }
+
     &-list {
       display: flex;
       gap: 50px;
@@ -35,9 +59,9 @@
     }
 
     &:hover .header__dropdown-nav {
-      opacity: 1; 
-      visibility: visible; 
-      transition-delay: .3s;
+      opacity: 1;
+      visibility: visible;
+      transition-delay: 0.3s;
     }
 
     &-nav {
@@ -48,7 +72,7 @@
       width: 249px;
       opacity: 0;
       visibility: hidden;
-      transition: opacity .3s ease, visibility 0s .3s;
+      transition: opacity 0.3s ease, visibility 0s 0.3s;
     }
 
     &__list {
@@ -81,5 +105,183 @@
   &__btn {
     @include flex-align-center;
     gap: 20px;
+
+    @include breakpoint-1300 {
+      display: none;
+    }
+  }
+
+  &__mobile {
+    display: none;
+
+    @include breakpoint-1300 {
+      display: block;
+    }
+
+    &-wrap {
+      @include flex-all-between;
+      margin-bottom: 30px;
+    }
+
+    &-btn {
+      display: flex;
+      gap: 10px;
+
+      @media (max-width: 550px) {
+        gap: 8px;
+      }
+    }
+
+    &-button {
+      display: inline-block;
+      padding: 10px 39px;
+
+      @media (max-width: 550px) {
+        flex: 1;
+        padding: 10px 0;
+        text-align: center;
+      }
+    }
+
+    &-nav {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 3;
+      background-color: var(--white-color);
+      padding: 110px 40px 40px;
+      width: 100%;
+      border-radius: 16px;
+      display: none;
+
+      &.active {
+        display: block;
+      }
+
+      &-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 20px;
+
+        @media (max-width: 550px) {
+          gap: 4px;
+        }
+      }
+
+      &-item {
+        position: relative;
+        flex: 1;
+      }
+
+      &-link {
+        @include flex-all-center;
+        padding: 10px 39px;
+        height: 36px;
+        border: 1px solid var(--blueviolet-dark-color);
+        border-radius: 100px;
+        background-color: var(--white-color);
+        transition: all var(--transition);
+        white-space: nowrap;
+        color: var(--blueviolet-dark-color);
+
+        @media (max-width: 550px) {
+          padding: 10px 25px;
+        }
+
+        & path {
+          fill: var(--blueviolet-dark-color);
+        }
+
+        &:hover {
+          color: var(--white-color);
+          background-color: var(--blueviolet-dark-color);
+
+          & svg path {
+            fill: var(--white-color);
+          }
+        }
+      }
+
+      &-btn {
+        display: flex;
+        gap: 10px;
+  
+        @media (max-width: 550px) {
+          gap: 8px;
+          flex-direction: column;
+        }
+      }
+  
+      &-button {
+        display: inline-block;
+        padding: 10px 39px;
+  
+        @media (max-width: 550px) {
+          flex: 1;
+          text-align: center;
+        }
+      }
+    }
+
+    &-dropdown {
+      position: relative;
+
+      &-nav {
+        position: absolute; 
+        margin: 12px 0 28px;
+        display: none;
+        top: 100%;
+        right: 50%;
+        z-index: 2;
+        transform: translateX(50%);
+
+        &.active {
+          display: block;
+        }
+      }
+
+      &-list {
+        @include flex-column;
+        gap: 4px;
+      }
+
+      &-item {
+        display: inline-flex;
+        justify-content: center;
+      }
+
+      &-link {
+        @include flex-all-center;
+        padding: 10px 39px;
+        height: 36px;
+        border: 1px solid var(--blueviolet-dark-color);
+        border-radius: 100px;
+        background-color: var(--white-color);
+        transition: all var(--transition);
+        white-space: nowrap;
+        color: var(--blueviolet-dark-color);
+
+        &:hover {
+          color: var(--white-color);
+          background-color: var(--blueviolet-dark-color);
+        }
+      }
+    }
+
+    &-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 2;
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
   }
 }

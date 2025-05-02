@@ -1,0 +1,55 @@
+.burger {
+  position: relative;
+  width: 37px;
+  height: 25px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+  z-index: 10;
+
+  @include breakpoint-1300 {
+    display: block;
+  }
+
+  span,
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: rgb(147, 111, 212);
+    transition: 0.3s;
+    border-radius: 10px;
+  }
+
+  span {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  &.active {
+    span {
+      transform: translateY(-50%) rotate(45deg);
+    }
+
+    &::before {
+      top: 50%;
+      transform: translateY(-50%) rotate(-45deg);
+    }
+
+    &::after {
+      opacity: 0;
+    }
+  }
+}

@@ -1,14 +1,50 @@
 .blog {
   padding-bottom: 172px;
 
+  @include breakpoint-1200 {
+    padding-bottom: 150px;
+  }
+
+  @include breakpoint-1000 {
+    padding-bottom: 120px;
+  }
+
+  @include breakpoint-800 {
+    padding-bottom: 80px;
+  }
+
+  @include breakpoint-600 {
+    padding-bottom: 60px;
+  }
+
   &__title {
     margin-bottom: 80px;
+
+    @include breakpoint-1400 {
+      margin-bottom: 60px;
+    }
+    
+    @include breakpoint-1000 {
+      margin-bottom: 40px;
+    }
+
+    @include breakpoint-500 {
+      margin-bottom: 20px;
+    }
   }
 
   &__body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+
+    @include breakpoint-900 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint-600 {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   &__article {
@@ -37,6 +73,11 @@
     &-link {
       display: inline-block;
       max-width: 201px;
+
+      @include breakpoint-900 {
+        max-width: 100%;
+        text-align: center;
+      }
     }
   }
 }

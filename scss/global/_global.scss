@@ -1,5 +1,6 @@
 @import 'text';
 @import 'button';
+@import 'burger';
 
 .body {
   font-family: "Montserrat Alternates", sans-serif;
@@ -10,9 +11,28 @@
   min-height: 100%;
 }
 
+$breakpoints: (
+  1400px: 1270px,
+  1300px: 1170px,
+  1200px: 1070px,
+  1100px: 970px,
+  1000px: 870px,
+  900px: 770px,
+  800px: 670px,
+  700px: 570px,
+  600px: 470px,
+  500px: 400px
+);
+
 .container {
   margin: 0 auto;
   padding: 0 15px;
   max-width: 1438px;
   height: 100%;
+
+  @each $breakpoint, $max-width in $breakpoints {
+    @media (max-width: #{$breakpoint}) {
+      max-width: $max-width;
+    }
+  }
 }

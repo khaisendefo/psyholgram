@@ -11,6 +11,27 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
       text-fill-color: transparent;
+
+      @include breakpoint-1200 {
+        font-size: 55px;
+      }
+
+      @include breakpoint-1000 {
+        font-size: 48px;
+      }
+
+      @include breakpoint-700 {
+        font-size: 42px;
+      }
+
+      @include breakpoint-600 {
+        font-size: 37px;
+      }
+
+      @include breakpoint-500 {
+        font-size: 32px;
+        line-height: 40px;
+      }
     }
 
     &-h2 {
@@ -23,6 +44,26 @@
       font-weight: 500;
       line-height: 59px;
       letter-spacing: 0%;
+
+      @include breakpoint-1200 {
+        font-size: 45px;
+      }
+
+      @include breakpoint-1000 {
+        font-size: 42px;
+      }
+
+      @include breakpoint-700 {
+        font-size: 38px;
+      }
+
+      @include breakpoint-600 {
+        font-size: 35px;
+      }
+
+      @include breakpoint-500 {
+        font-size: 32px;
+      }
     }
 
     &-h3 {
@@ -35,6 +76,18 @@
       font-weight: 500;
       line-height: 39px;
       letter-spacing: 0%;
+
+      @include breakpoint-1200 {
+        font-size: 28px;
+      }
+
+      @include breakpoint-1000 {
+        font-size: 25px;
+      }
+
+      @include breakpoint-500 {
+        font-size: 20px;
+      }
     }
   }
   
@@ -45,9 +98,43 @@
     line-height: 26px;
     letter-spacing: 0px;
 
+    @include breakpoint-1200 {
+      font-size: 18px;
+    }
+
+    @include breakpoint-1000 {
+      font-size: 17px;
+    }
+
+    @include breakpoint-700 {
+      font-size: 15px;
+      line-height: 20px;
+    }
+
+    @include breakpoint-500 {
+      font-size: 14px;
+    }
+
     &-medium {
       font-weight: 500;
       line-height: 24px;
+
+      @include breakpoint-1200 {
+        font-size: 18px;
+      }
+
+      @include breakpoint-1000 {
+        font-size: 17px;
+      }
+
+      @include breakpoint-700 {
+        font-size: 15px;
+        line-height: 17px;
+      }
+
+      @include breakpoint-500 {
+        font-size: 14px;
+      }
     }
   }
 
@@ -61,6 +148,10 @@
     &-regular {
       font-weight: 500;
     }
+
+    @media (max-width: 550px) {
+      font-size: 14px;
+    }
   }
 
   &-name {
@@ -68,6 +159,14 @@
     font-size: 24px;
     font-weight: 500;
     line-height: 24px;
+
+    @include breakpoint-1200 {
+      font-size: 22px;
+    }
+
+    @include breakpoint-800 {
+      font-size: 20px;
+    }
   }
 
   &-hover {

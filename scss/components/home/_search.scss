@@ -1,15 +1,45 @@
 .search {
   padding-bottom: 120px;
 
+  @include breakpoint-1200 {
+    padding-bottom: 100px;
+  }
+
+  @include breakpoint-1000 {
+    padding-bottom: 80px;
+  }
+
+  @include breakpoint-800 {
+    padding-bottom: 60px;
+  }
+
   &__card {
     @include flex-between;
     padding: 80px 100px;
     border-radius: 64px;
     background: #2f2e41;
+
+    @include breakpoint-1200 {
+      padding: 50px 70px;
+    }
+
+    @include breakpoint-1000 {
+      padding: 40px;
+    }
+
+    @include breakpoint-900 {
+      flex-direction: column-reverse;
+    }
   }
 
   &__info {
     max-width: 614px;
+
+    @include breakpoint-900 {
+      @include flex-all-center;
+      flex-direction: column;
+      text-align: center;
+    }
   }
 
   &__title {
@@ -22,6 +52,17 @@
   &__description {
     margin-bottom: 40px;
     color: var(--white-color);
+  }
+
+  & img {
+    @include breakpoint-1000 {
+      width: 350px;
+    }
+
+    @include breakpoint-900 {
+      width: 100%;
+      margin-bottom: 40px;
+    }
   }
 
   &__link {
