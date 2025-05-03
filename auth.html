@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>psyhogram</title>
+  <link rel="stylesheet" href="assets/css/auth.css">
+</head>
+<body class="body">
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__container container">
+          <div class="header__wrap">
+            <a class="header__logo" href="#">
+              <img src="assets/image/logo.svg" alt="">
+            </a>
+            <nav class="header__nav">
+              <ul class="header__nav-list">
+                <li class="header__nav-item">
+                  <a href="#hero" class="header__nav-link text-item text-hover-link">Главная</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#search" class="header__nav-link text-item text-hover-link">Найти психолога</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link text-item header__dropdown text-hover-link">
+                    <div class="header__dropdown">
+                      Услуги
+                      <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.36603 8C4.98113 8.66667 4.01887 8.66667 3.63397 8L0.169873 2C-0.215027 1.33333 0.266099 0.5 1.0359 0.5L7.9641 0.5C8.7339 0.5 9.21503 1.33333 8.83013 2L5.36603 8Z" fill="#151517"/>
+                      </svg>     
+                      <nav class="header__dropdown-nav">
+                        <ul class="header__dropdown__list">
+                          <li class="header__dropdown__item">
+                            <a class="header__dropdown__link text-item text-item-regular" href="#">Психолог в мессенджере</a>
+                          </li>
+                          <li class="header__dropdown__item">
+                            <a class="header__dropdown__link text-item text-item-regular" href="#">Творчество+психолог</a>
+                          </li>
+                          <li class="header__dropdown__item">
+                            <a class="header__dropdown__link text-item text-item-regular" href="#">Семейная терапия</a>
+                          </li>
+                          <li class="header__dropdown__item">
+                            <a class="header__dropdown__link text-item text-item-regular" href="#">Детский психолог</a>
+                          </li>
+                          <li class="header__dropdown__item">
+                            <a class="header__dropdown__link text-item text-item-regular" href="#">Нейропсихолог</a>
+                          </li>
+                          <li class="header__dropdown__item">
+                            <a class="header__dropdown__link text-item text-item-regular" href="#">Психокоучинг</a>
+                          </li>
+                        </ul>
+                      </nav>  
+                    </div>                                  
+                  </a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#blog" class="header__nav-link text-item text-hover-link">Блог</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link text-item text-hover-link">О нас</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__btn">
+            <a class="header__button button button-transparent" href="#">Мой профиль</a>
+            <a class="header__button button button-blueviolet" href="#">Чаты (0)</a>
+            <a class="header__button button button-blueviolet" href="#">Заявки (0)</a>
+          </div>
+        </div>
+        <div class="header__mobile">
+          <div class="header__mobile-inner">
+            <div class="header__mobile-container container">
+              <div class="header__mobile-wrap">
+                <a class="header__logo" href="#">
+                  <img src="assets/image/logo.svg" alt="">
+                </a>
+                <button class="burger">
+                  <span></span>
+                </button>
+              </div>
+              <div class="header__mobile-btn">
+                <a class="header__mobile-button button button-transparent" href="#">Мой профиль</a>
+                <a class="header__mobile-button button button-blueviolet" href="#">Чаты (0)</a>
+              </div>
+            </div>
+            <div class="header__mobile-nav">
+              <ul class="header__mobile-nav-list">
+                <li class="header__mobile-nav-item">
+                  <a href="#hero" class="header__mobile-nav-link text-item text-hover-link menu-link">Главная</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#search" class="header__mobile-nav-link text-item text-hover-link menu-link">Найти психолога</a>
+                </li>
+                <li class="header__mobile-nav-item">
+                  <a href="#blog" class="header__mobile-nav-link text-item text-hover-link menu-link">Блог</a>
+                </li>
+                <li class="header__mobile-nav-item">
+                  <a href="#" class="header__mobile-dropdown-link header__mobile-nav-link text-item text-hover-link">
+                    <div class="header__mobile-dropdown">
+                      Услуги
+                      <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.36603 8C4.98113 8.66667 4.01887 8.66667 3.63397 8L0.169873 2C-0.215027 1.33333 0.266099 0.5 1.0359 0.5L7.9641 0.5C8.7339 0.5 9.21503 1.33333 8.83013 2L5.36603 8Z" fill="#151517"/>
+                      </svg>     
+                    </div>  
+                  </a>
+                  <nav class="header__mobile-dropdown-nav">
+                    <ul class="header__mobile-dropdown-list">
+                      <li class="header__mobile-dropdown-item">
+                        <a class="header__mobile-dropdown-link text-item text-item-regular menu-link" href="#">Психолог в мессенджере</a>
+                      </li>
+                      <li class="header__mobile-dropdown-item">
+                        <a class="header__mobile-dropdown-link text-item text-item-regular menu-link" href="#">Творчество+психолог</a>
+                      </li>
+                      <li class="header__mobile-dropdown-item">
+                        <a class="header__mobile-dropdown-link text-item text-item-regular menu-link" href="#">Семейная терапия</a>
+                      </li>
+                      <li class="header__mobile-dropdown-item">
+                        <a class="header__mobile-dropdown-link text-item text-item-regular menu-link" href="#">Детский психолог</a>
+                      </li>
+                      <li class="header__mobile-dropdown-item">
+                        <a class="header__mobile-dropdown-link text-item text-item-regular menu-link" href="#">Нейропсихолог</a>
+                      </li>
+                      <li class="header__mobile-dropdown-item">
+                        <a class="header__mobile-dropdown-link text-item text-item-regular menu-link" href="#">Психокоучинг</a>
+                      </li>
+                    </ul>
+                  </nav>                                  
+                </li>
+                <li class="header__mobile-nav-item">
+                  <a href="#" class="header__mobile-nav-link text-item text-hover-link menu-link">О нас</a>
+                </li>
+              </ul>
+              <div class="header__mobile-nav-btn">
+                <a class="header__mobile-nav-button button button-transparent" href="#">Мой профиль</a>
+                <a class="header__mobile-nav-button button button-blueviolet" href="#">Чаты (0)</a>
+                <a class="header__mobile-nav-button button button-blueviolet" href="#">Заявки (0)</a>
+              </div>
+            </div>
+            <div class="header__mobile-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero" id="hero">
+        <div class="hero__inner">
+          <div class="hero__container container">
+            <div class="hero__info">
+              <h1 class="hero__title text-title-h1">Психолограм - сервис онлайн - психологии</h1>
+              <p class="hero__description text-p">Наши специалисты помогут вам разобраться в сложных жизненных ситуациях, справиться со стрессом, найти выход из психологического тупика </p>
+              <div class="hero__stat">
+                <span class="hero__stat-number">6,359,769</span>
+                <p class="hero__stat-description">Консультаций проведено</p>
+              </div>
+            </div>
+            <div class="hero__img">
+              <img src="assets/image/hero.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="services" id="services">
+        <div class="services__container container">
+          <div class="services__head">
+            <h2 class="services__title text-title-h2">Наши услуги:</h2>
+            <p class="services__description text-p">Выберите услугу, которая поможет вам достичь желаемых результатов. Мы гарантируем конфиденциальность, индивидуальный подход и профессиональную помощь от опытных психологов</p>
+          </div>
+          <ul class="services__list">
+            <li class="services__card services__card-one search__card-white">
+              <h3 class="services__card-title text-title-h3">Подобрать себе психолога</h3>
+              <p class="services__card-description text-p">Выберите психолога и дату консультации прямо сейчас</p>
+              <div class="services__card-image">
+                <img src="assets/image/services/1.png" alt="">
+              </div>        
+              <a class="services__card-link button button-blueviolet" href="#">Начать поиск</a>
+            </li>
+            <li class="services__card services__card-two services__card-blue">
+              <h3 class="services__card-title text-title-h3">Бесплатный онлайн-чат с психологом </h3>
+              <p class="services__card-description text-p">Диагностическая консультация в онлайн-чате</p>
+              <div class="services__card-image">
+                <img src="assets/image/services/2.png" alt="">
+              </div>        
+              <a class="services__card-link button button-white" href="#">Начать чат</a>
+            </li>
+            <li class="services__card services__card-blue services__card-three">
+              <h3 class="services__card-title text-title-h3">Онлайн-сессия с элементами творчества</h3>
+              <div class="services__card-image">
+                <img src="assets/image/services/3.png" alt="">
+              </div>        
+              <a class="services__card-link button button-white" href="#">Записаться</a>
+            </li>
+            <li class="services__card services__card-four search__card-white">
+              <h3 class="services__card-title text-title-h3">Психолог в мессенджере</h3>
+              <p class="services__card-description text-p">60 минут текстовой переписки с опытным психологом в мессенджере</p>
+              <div class="services__card-image">
+                <img src="assets/image/services/4.png" alt="">
+              </div>        
+              <a class="services__card-link button button-blueviolet" href="#">Подробнее</a>
+            </li>
+            <li class="services__card services__card-five search__card-white">
+              <h3 class="services__card-title text-title-h3">Нейропсихологическая консультация</h3>
+              <div class="services__card-image">
+                <img src="assets/image/services/5.png" alt="">
+              </div>        
+              <a class="services__card-link button button-blueviolet" href="#">Начать</a>
+            </li>
+            <li class="services__card services__card-six services__card-blue">
+              <h3 class="services__card-title text-title-h3">Консультация с коучем-психологом</h3>
+              <div class="services__card-image">
+                <img src="assets/image/services/6.png" alt="">
+              </div>        
+              <a class="services__card-link button button-white" href="#">Записаться</a>
+            </li>
+            <li class="services__card services__card-seven services__card-blue">
+              <h3 class="services__card-title text-title-h3">Онлайн-сессия с детским психологом</h3>
+              <div class="services__card-image">
+                <img src="assets/image/services/3.png" alt="">
+              </div>        
+              <a class="services__card-link button button-white" href="#">Записаться</a>
+            </li>
+            <li class="services__card search__card-eth search__card-white">
+              <h3 class="services__card-title text-title-h3">Семейная терапия с опытным психологом</h3>
+              <div class="services__card-image">
+                <img src="assets/image/services/8.png" alt="">
+              </div>        
+              <a class="services__card-link button button-blueviolet" href="#">Подобрать</a>
+            </li>
+          </ul>
+          <ul class="services__list services__list-two">
+            <li class="services__card services__card-one search__card-white">
+              <h3 class="services__card-title text-title-h3">Подобрать себе психолога</h3>
+              <p class="services__card-description text-p">Выберите психолога и дату консультации прямо сейчас</p>
+              <div class="services__card-image">
+                <img src="assets/image/services/1.png" alt="">
+              </div>        
+              <a class="services__card-link button button-blueviolet" href="#">Начать поиск</a>
+            </li>
+            <li class="services__card services__card-two services__card-blue">
+              <h3 class="services__card-title text-title-h3">Бесплатный онлайн-чат с психологом </h3>
+              <p class="services__card-description text-p">Диагностическая консультация в онлайн-чате</p>
+              <div class="services__card-image">
+                <img src="assets/image/services/2.png" alt="">
+              </div>        
+              <a class="services__card-link button button-white" href="#">Начать чат</a>
+            </li>
+            <li class="services__card services__card-four search__card-white">
+              <h3 class="services__card-title text-title-h3">Психолог в мессенджере</h3>
+              <p class="services__card-description text-p">60 минут текстовой переписки с опытным психологом в мессенджере</p>
+              <div class="services__card-image">
+                <img src="assets/image/services/4.png" alt="">
+              </div>        
+              <a class="services__card-link button button-blueviolet" href="#">Подробнее</a>
+            </li>
+            <li class="services__card services__card-blue services__card-three">
+              <h3 class="services__card-title text-title-h3">Онлайн-сессия с элементами творчества</h3>
+              <div class="services__card-image">
+                <img src="assets/image/services/3.png" alt="">
+              </div>        
+              <a class="services__card-link button button-white" href="#">Записаться</a>
+            </li>
+            <li class="services__card services__card-five search__card-white">
+              <h3 class="services__card-title text-title-h3">Нейропсихологическая консультация</h3>
+              <div class="services__card-image">
+                <img src="assets/image/services/5.png" alt="">
+              </div>        
+              <a class="services__card-link button button-blueviolet" href="#">Начать</a>
+            </li>
+            <li class="services__card services__card-six services__card-blue">
+              <h3 class="services__card-title text-title-h3">Консультация с коучем-психологом</h3>
+              <div class="services__card-image">
+                <img src="assets/image/services/6.png" alt="">
+              </div>        
+              <a class="services__card-link button button-white" href="#">Записаться</a>
+            </li>
+            <li class="services__card search__card-eth search__card-white">
+              <h3 class="services__card-title text-title-h3">Семейная терапия с опытным психологом</h3>
+              <div class="services__card-image">
+                <img src="assets/image/services/8.png" alt="">
+              </div>        
+              <a class="services__card-link button button-blueviolet" href="#">Подобрать</a>
+            </li>
+            <li class="services__card services__card-seven services__card-blue">
+              <h3 class="services__card-title text-title-h3">Онлайн-сессия с детским психологом</h3>
+              <div class="services__card-image">
+                <img src="assets/image/services/3.png" alt="">
+              </div>        
+              <a class="services__card-link button button-white" href="#">Записаться</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="top-psychologists" id="top-psychologists">
+        <div class="top-psychologists__inner">
+          <div class="top-psychologists__container container">
+            <h2 class="top-psychologists__title text-title-h2">ТОП психологи:</h2>
+            <ul class="top-psychologists__list">
+              <li class="top-psychologists__list-card">
+                <div class="top-psychologists__list-image">
+                  <img width="220" src="assets/image/top-psychologists/1.jpg" alt="">
+                </div>
+                <span class="top-psychologists__list-name text-p text-p-medium">Алина Иванова</span>
+              </li>
+              <li class="top-psychologists__list-card">
+                <div class="top-psychologists__list-image">
+                  <img width="220" src="assets/image/top-psychologists/1.jpg" alt="">
+                </div>
+                <span class="top-psychologists__list-name text-p text-p-medium">Алина Иванова</span>
+              </li>
+              <li class="top-psychologists__list-card">
+                <div class="top-psychologists__list-image">
+                  <img width="220" src="assets/image/top-psychologists/1.jpg" alt="">
+                </div>
+                <span class="top-psychologists__list-name text-p text-p-medium">Алина Иванова</span>
+              </li>
+              <li class="top-psychologists__list-card">
+                <div class="top-psychologists__list-image">
+                  <img width="220" src="assets/image/top-psychologists/1.jpg" alt="">
+                </div>
+                <span class="top-psychologists__list-name text-p text-p-medium">Алина Иванова</span>
+              </li>
+              <li class="top-psychologists__list-card">
+                <div class="top-psychologists__list-image">
+                  <img width="220" src="assets/image/top-psychologists/1.jpg" alt="">
+                </div>
+                <span class="top-psychologists__list-name text-p text-p-medium">Алина Иванова</span>
+              </li>
+              <li class="top-psychologists__list-card">
+                <div class="top-psychologists__list-image">
+                  <img width="220" src="assets/image/top-psychologists/1.jpg" alt="">
+                </div>
+                <span class="top-psychologists__list-name text-p text-p-medium">Алина Иванова</span>
+              </li>
+              <li class="top-psychologists__list-card">
+                <div class="top-psychologists__list-image">
+                  <img width="220" src="assets/image/top-psychologists/1.jpg" alt="">
+                </div>
+                <span class="top-psychologists__list-name text-p text-p-medium">Алина Иванова</span>
+              </li>
+              <li class="top-psychologists__list-card">
+                <div class="top-psychologists__list-image">
+                  <img width="220" src="assets/image/top-psychologists/1.jpg" alt="">
+                </div>
+                <span class="top-psychologists__list-name text-p text-p-medium">Алина Иванова</span>
+              </li>
+              <li class="top-psychologists__list-card">
+                <div class="top-psychologists__list-image">
+                  <img width="220" src="assets/image/top-psychologists/1.jpg" alt="">
+                </div>
+                <span class="top-psychologists__list-name text-p text-p-medium">Алина Иванова</span>
+              </li>
+              <li class="top-psychologists__list-card">
+                <div class="top-psychologists__list-image">
+                  <img width="220" src="assets/image/top-psychologists/1.jpg" alt="">
+                </div>
+                <span class="top-psychologists__list-name text-p text-p-medium">Алина Иванова</span>
+              </li>
+              <li class="top-psychologists__list-card">
+                <div class="top-psychologists__list-image">
+                  <img width="220" src="assets/image/top-psychologists/1.jpg" alt="">
+                </div>
+                <span class="top-psychologists__list-name text-p text-p-medium">Алина Иванова</span>
+              </li>
+              <li class="top-psychologists__list-card">
+                <div class="top-psychologists__list-image">
+                  <img width="220" src="assets/image/top-psychologists/1.jpg" alt="">
+                </div>
+                <span class="top-psychologists__list-name text-p text-p-medium">Алина Иванова</span>
+              </li>
+              <li class="top-psychologists__list-card">
+                <div class="top-psychologists__list-image">
+                  <img width="220" src="assets/image/top-psychologists/1.jpg" alt="">
+                </div>
+                <span class="top-psychologists__list-name text-p text-p-medium">Алина Иванова</span>
+              </li>
+              <li class="top-psychologists__list-card">
+                <div class="top-psychologists__list-image">
+                  <img width="220" src="assets/image/top-psychologists/1.jpg" alt="">
+                </div>
+                <span class="top-psychologists__list-name text-p text-p-medium">Алина Иванова</span>
+              </li>
+              <li class="top-psychologists__list-card">
+                <div class="top-psychologists__list-image">
+                  <img width="220" src="assets/image/top-psychologists/1.jpg" alt="">
+                </div>
+                <span class="top-psychologists__list-name text-p text-p-medium">Алина Иванова</span>
+              </li>
+            </ul>
+            <a class="top-psychologists__link button button-blueviolet" href="#">Смотреть</a>
+          </div>
+        </div>
+      </section>
+      <section class="blog" id="blog">
+        <div class="blog__inner">
+          <div class="blog__container container">
+            <h2 class="blog__title text-title-h2">Из нашего блога:</h2>
+            <div class="blog__body">
+              <article class="blog__article">
+                <div class="blog__article-image">
+                  <img width="456" src="assets/image/blog/1.jpg" alt="">
+                </div>
+                <div class="blog__article-info">
+                  <h3 class="blog__article-title text-title-h3">Как поставить цели?</h3>
+                  <p class="blog__article-description text-p">Как научиться ставить правильные цели и достигать их? Всё начинается с правильных привычек.</p>
+                  <a class="blog__article-link button button-transparent" href="#">Подробнее</a>
+                </div>
+              </article>
+              <article class="blog__article">
+                <div class="blog__article-image">
+                  <img width="456" src="assets/image/blog/1.jpg" alt="">
+                </div>
+                <div class="blog__article-info">
+                  <h3 class="blog__article-title text-title-h3">Как поставить цели?</h3>
+                  <p class="blog__article-description text-p">Как научиться ставить правильные цели и достигать их? Всё начинается с правильных привычек.</p>
+                  <a class="blog__article-link button button-transparent" href="#">Подробнее</a>
+                </div>
+              </article>
+              <article class="blog__article">
+                <div class="blog__article-image">
+                  <img width="456"src="assets/image/blog/1.jpg" alt="">
+                </div>
+                <div class="blog__article-info">
+                  <h3 class="blog__article-title text-title-h3">Как поставить цели?</h3>
+                  <p class="blog__article-description text-p">Как научиться ставить правильные цели и достигать их? Всё начинается с правильных привычек.</p>
+                  <a class="blog__article-link button button-transparent" href="#">Подробнее</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="search" id="search">
+        <div class="search__container container">
+          <div class="search__card">
+            <div class="search__info">
+              <h2 class="search__title text-title-h1">Выбери своего психолога</h2>
+              <p class="search__description text-p">Все наши специалисты обладают правом ведения психологической деятельности и регулярно проходят супервизии, имеют профильное образование и опыт консультирования. Под термином “психотерапия” на сайте подразумевается психологическое консультирование. Психотерапевты и психологи не оказывают медицинских услуг в сервисе Психолограм</p>
+              <a class="search__link button button-blueviolet" href="#">Поиск психолога</a>
+            </div>
+            <div class="search__image">
+              <img src="assets/image/search.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__inner">
+          <a class="footer__logo footer__col-one" href="#">
+            <img src="assets/image/logo.png" alt="">
+          </a>
+          <div class="footer__col footer__col-two">
+            <span class="text-name">Услуги</span>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link text-p text-hover-link" href="#">Психолог в мессенджере</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link text-p text-hover-link" href="#">Диагностика</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link text-p text-hover-link" href="#">Блог</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link text-p text-hover-link" href="#">Найти психолога</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link text-p text-hover-link" href="#">Консультация психологов</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col footer__col-three">
+            <span class="text-name">Компания</span>
+            <ul class="footer__list footer__list-two">
+              <li class="footer__item">
+                <a class="footer__link text-p text-hover-link" href="#">О нас</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link text-p text-hover-link" href="#">Специалистам</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link text-p text-hover-link" href="#">Начинающим психологам</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link text-p text-hover-link" href="#">Правовые</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link text-p text-hover-link" href="#">Отзывы</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col footer__col-six"></div>
+          <div class="footer__col footer__col-four">
+            <span class="text-name">Техподдержка</span>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link text-p text-hover-link" href="#">Связаться</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col footer__col-five">
+            <ul class="footer__social">
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <img src="assets/image/social/vk.png" alt="">
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <img src="assets/image/social/ok.png" alt="">
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <img src="assets/image/social/tiktok.png" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer__copyright">© Psyhologram 2019-2025</p>
+      </div>
+    </footer>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

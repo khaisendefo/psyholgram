@@ -98,7 +98,7 @@
     line-height: 15px;
 
     @include breakpoint-800 {
-      display: none;
+      margin-top: 20px;
     }
   }
 }
