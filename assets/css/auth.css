@@ -883,7 +883,6 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 30px;
 }
 .header__mobile-btn {
   display: -webkit-box;
@@ -1267,6 +1266,7 @@ a {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 517px);
 }
 @media (max-width: 1000px) {
   .services__list {
@@ -1281,20 +1281,22 @@ a {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 517px);
   }
 }
 @media (max-width: 1000px) and (max-width: 1000px) {
   .services__list-two {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, auto);
     gap: 20px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+@media (max-width: 1000px) and (max-width: 600px) {
+  .services__list-two {
+    grid-template-rows: repeat(8, 388px);
   }
 }
 .services__card {
@@ -1309,6 +1311,9 @@ a {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 40px 47px;
   border: 2px solid var(--blueviolet-dark-color);
   border-radius: 64px;
@@ -1320,25 +1325,16 @@ a {
             order: 0;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .services__card {
     padding: 40px 20px;
   }
-}
-.services__card-one {
-  padding: 80px 47px 40px;
 }
 @media (max-width: 1000px) {
   .services__card-one {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
-    padding: 40px 47px;
-  }
-}
-@media (max-width: 500px) {
-  .services__card-one {
-    padding: 40px 20px;
   }
 }
 @media (max-width: 1000px) {
@@ -1346,19 +1342,6 @@ a {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
-  }
-}
-.services__card-three {
-  padding: 49px 53px 39px;
-}
-@media (max-width: 1000px) {
-  .services__card-three {
-    padding: 40px 47px;
-  }
-}
-@media (max-width: 500px) {
-  .services__card-three {
-    padding: 40px 20px;
   }
 }
 .services__card-three .services__card-title {
@@ -1394,6 +1377,16 @@ a {
 .services__card-title {
   margin-bottom: 10px;
 }
+@media (max-width: 600px) {
+  .services__card-title {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 600px) {
+  .services__card-title-two {
+    margin-bottom: 10px;
+  }
+}
 .services__card-description {
   margin-bottom: 30px;
 }
@@ -1407,7 +1400,24 @@ a {
   }
 }
 .services__card-link {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 298px;
+  height: 70px;
+  margin: 0 auto;
+}
+@media (max-width: 600px) {
+  .services__card-link {
+    width: 186px;
+    height: 50px;
+  }
 }
 
 .top-psychologists {

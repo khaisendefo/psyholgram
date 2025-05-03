@@ -49,6 +49,7 @@
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 517px);
 
     @include breakpoint-1000 {
       display: none;
@@ -61,12 +62,18 @@
         display: grid;
         gap: 20px;
         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 517px);
 
         @include breakpoint-1000 {
-          display: flex;
-          flex-direction: column;
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(8, auto);
           gap: 20px;
           flex-wrap: wrap;
+        }
+
+        @include breakpoint-600 {
+          grid-template-rows: repeat(8, 388px);
         }
       }
     }
@@ -76,6 +83,7 @@
     @include flex-column;
     align-items: center;
     text-align: center;
+    justify-content: space-between;
     padding: 40px 47px;
     border: 2px solid var(--blueviolet-dark-color);
     border-radius: 64px;
@@ -84,20 +92,16 @@
       order: 0;
     }
 
-    @include breakpoint-500 {
+    @include breakpoint-600 {
       padding: 40px 20px;
     }
 
-    &-one {
-      padding: 80px 47px 40px;
+    &-info {
+    }
 
+    &-one {
       @include breakpoint-1000 {
         order: -1;
-        padding: 40px 47px;
-      }
-
-      @include breakpoint-500 {
-        padding: 40px 20px;
       }
     }
 
@@ -108,16 +112,6 @@
     }
 
     &-three {
-      padding: 49px 53px 39px;
-
-      @include breakpoint-1000 {
-        padding: 40px 47px;
-      }
-
-      @include breakpoint-500 {
-        padding: 40px 20px;
-      }
-
       & .services__card-title {
         margin-bottom: 33px;
       }
@@ -173,6 +167,16 @@
 
     &-title {
       margin-bottom: 10px;
+
+      @include breakpoint-600 {
+        margin-bottom: 40px;
+      }
+
+      &-two {
+        @include breakpoint-600 {
+          margin-bottom: 10px;
+        }
+      }
     }
 
     &-description {
@@ -191,7 +195,17 @@
     }
 
     &-link {
-      display: inline-block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 298px;
+      height: 70px;
+      margin: 0 auto;
+
+      @include breakpoint-600 {
+        width: 186px;
+        height: 50px;
+      }
     }
   }
 }
