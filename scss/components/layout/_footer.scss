@@ -46,11 +46,25 @@
     }
 
     &-one {
-      order: -2;
+      @include breakpoint-800 {
+        order: -2;
+      }
     }
 
     &-five {
-      order: -2;
+      @include breakpoint-800 {
+        display: flex;
+        justify-content: center;
+        order: -2;
+      }
+    }
+
+    &-six {
+      display: none;
+
+      @include breakpoint-800 {
+        display: block;
+      }
     }
   }
 
@@ -82,5 +96,9 @@
     font-size: 12px;
     font-weight: 400;
     line-height: 15px;
+
+    @include breakpoint-800 {
+      display: none;
+    }
   }
 }
